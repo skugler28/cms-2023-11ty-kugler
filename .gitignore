@@ -1,0 +1,12 @@
+/bin/
+/build/
+/node_modules/
+.vscode/
+.idea/
+__pycache__/
+*.class
+*.log
+.DS_Store
+Desktop.ini
+.AppleDouble
+Thumbs.db

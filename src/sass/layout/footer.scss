@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    margin-top: 3rem;
+    background-color: $darkGray;
+    padding: 1.2rem;
+    color: white;
+}
+#copyright{
+    font-size: 8pt;
+}
+#imprint{
+    text-decoration: none;
+    font-size: 8pt;
+    color: $middleOrange; 
+    margin: 0.3125rem 0 0;
+}
+
+
+@include breakpoint(0, $mobile) {
+    footer {
+        flex-direction: column;
+    }
+  }
+  
+  @include breakpoint($desktop) {
+    footer {
+        flex-direction: row;
+    }
+    #imprint {
+        justify-self: end;
+        margin-left: auto;
+    }
+  }

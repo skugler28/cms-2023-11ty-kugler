@@ -1,0 +1,59 @@
+h1{
+  width: fit-content;
+  margin: 20px;
+}
+
+@include breakpoint(0, $mobile) {
+
+  nav .menu-items {
+    position: absolute;
+    padding-top: 100px;
+    background: $middleGray;
+    height: 100%;
+    width: 50%;
+    top: 0%;
+    right: 0%;
+    flex-direction: column;
+    padding-right: 5vw;
+    z-index: 200;
+    text-align: right;
+  }
+
+  nav .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  nav input[type="checkbox"]:checked~.menu-items {
+    display: flex;
+  }
+
+  nav input[type="checkbox"]:not(:checked)~.menu-items {
+    display: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+}
+
+@include breakpoint($desktop) {
+
+  nav {
+    width: fit-content;
+    margin-right: 1.25rem;
+  }
+  .menu_helper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li > a {
+    color: $darkOrange;
+    margin-left: 1.1rem;
+  } 
+}

@@ -1,0 +1,55 @@
+
+section#about{
+  background-color: $paleOrange;
+  display: flex;
+  padding: 3.125rem 0;
+}
+
+div#about-information{
+  display: flex;  
+  flex-direction: column;
+}
+
+div#about-information p.super-headline{  
+  text-transform: uppercase;
+  font-family: "Source-sans-semibold";  
+  font-size: 1rem;
+  margin: 1.5625rem 0 -0.5rem 0.625rem;
+}
+
+div#about-information p.about-copytext {
+  font-family: "Source-sans-light";
+  font-size: 0.9375rem;
+  margin: 0.625rem 0.9375rem 0rem 0.625rem;
+  line-height: 1.25rem;
+}
+
+div#about-information a.button {
+  width: fit-content;
+  margin: 0.625rem;
+  color: $darkGray;
+}
+
+@include breakpoint(0, $mobile) {
+  section#about{
+    flex-direction: column;
+    margin: -3.125rem 0 0 0;
+  }
+}
+
+@include breakpoint($desktop) {
+  section#about{
+    flex-direction: row;
+    margin: 3.125rem 0 0 0;
+  }
+  #about img {
+    width: 50vw;
+    object-fit: cover;
+    object-position: left;
+  }
+  #about-information {
+    margin: 0 5rem 0 1.25rem;
+    line-height: 25px;
+  }
+}
+

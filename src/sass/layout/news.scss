@@ -1,0 +1,64 @@
+#news a.button {
+    margin: 1rem;
+    color: $darkGray;
+}
+
+#news img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#news article p {
+    margin: 1rem;
+    white-space: normal;
+    line-height: 20px;
+    font-size: 15px;
+}
+ 
+#news h3 {
+    font-size: 21px;
+}
+
+@include breakpoint(0, $mobile) {
+    .articles-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    #news article {
+        display: inline-block;
+        max-width: 300px;
+        background-color: $paleGray;
+        margin: 1rem;
+    }
+
+    #news {
+        overflow: hidden;
+    }
+
+
+}
+
+@include breakpoint($desktop) {
+    #news article {
+        display: inline-block;
+        width: fit-content;
+        background-color: $paleGray;
+        margin-right: 1rem;
+    }
+
+    #news article:first-child {
+        margin-left: 1rem;
+    }
+
+    .articles-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #news img {
+        height: 20vw;
+    }
+
+}

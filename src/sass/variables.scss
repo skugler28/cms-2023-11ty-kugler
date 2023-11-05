@@ -1,0 +1,30 @@
+// MAX-WIDTH CONTAINER SIZE
+$max-width: 1920;
+
+
+// BREAKPOINTS
+$mobile: 700;
+$desktop: $mobile + 1;
+
+
+// COLORS
+// $copy: ;
+// $bgcolor: ;
+$bggray: hsl(207, 8%, 22%);
+$primary: red;
+
+$white: hsla(0, 0%, 100%, 1);
+
+$darkOrange: hsla(26, 62%, 57%, 1);
+$middleOrange: hsla(26, 82%, 65%, 1);
+$lightOrange: hsla(26, 100%, 72%, 1);
+$paleOrange: hsla(23, 100%, 97%, 1);
+
+$darkGray: hsla(0, 0%, 21%, 1);
+$middleGray: hsla(0, 0%, 35%, 1);
+$lightGray: hsla(0, 0%, 84%, 1);
+$paleGray: hsla(0, 0%, 97%, 1);
+
+
+// margin unified
+$marginsectiontop: 50px;

@@ -1,0 +1,147 @@
+header {
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    background-image: url("/images/heroimage-1x.webp");
+  }
+
+  /* Hintergrundbild für höhere Auflösung (2x) */
+  @media (min-resolution: 144dpi) {
+    header {
+      background-image: url("/images/heroimage-2x.webp");
+    }
+  }
+  @media (min-resolution: 288dpi) {
+    header {
+      background-image: url("/images/heroimage-4x.webp");
+    }
+  }
+  @media (min-resolution: 576dpi) {
+    header {
+      background-image: url("/images/heroimage-6x.webp");
+    }
+  }
+
+
+  header h1 {
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav > ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 a{
+    text-transform: uppercase;
+  }
+  h1 a{
+    font-family: "Source-sans-bold";
+  }
+
+  @include breakpoint(0, 370) {
+    header {
+        height: 55vh;
+        background-position: right;
+    }
+    header > h2{
+        margin: 25vh 0 0 50vw;
+        white-space: wrap;
+      }
+      h2 a {
+        white-space: nowrap;
+      }
+      header a.button{
+        margin: 0.625rem 0 0 50vw;
+        width: fit-content;
+        background-color: black;
+      }
+  }
+
+  @include breakpoint(371, 473) {
+    header {
+        height: 100vh;
+        background-position: 90%;
+    }
+  }
+  @include breakpoint(474, 668) {
+    header {
+      height: 100vh;
+        background-position: 100%;
+    }
+  }
+  @include breakpoint(669, 769) {
+    header {
+      height: 100vh;
+        background-position: 110%;
+    }
+  }
+  @include breakpoint(770, 849) {
+    header {
+      height: 100vh;
+        background-position: 120%;
+    }
+  }
+
+  @include breakpoint(369, 849) {
+    header > h2{
+      margin: 50vh 0 0 50vw;
+      white-space: wrap;
+    }
+    h2 a {
+      white-space: nowrap;
+    }
+    header a.button{
+      margin: 10px 0 0 50vw;
+      width: fit-content;
+      background-color: black;
+    }
+  }
+@include breakpoint(850, 999) {
+  header {
+    height: 100vh;
+    background-size: cover;
+    background-position: 60%;
+  }
+}
+@include breakpoint(1000, 1199) {
+  header {
+    height: 100vh;
+    background-size: cover;
+    background-position: 80%;
+  }
+}
+@include breakpoint(1200) {
+  header {
+    height: 100vh;
+    background-size: cover;
+    background-position: 99%;
+  }
+}
+
+
+@include breakpoint(850) {
+  header > h2{
+    margin: 40vh 0 0 10vw;
+    white-space: wrap;
+    font-size: 3.35rem;
+  }
+  h2 a {
+    white-space: nowrap;
+  }
+  header a.button{
+    margin: 1.2rem 0 0 10vw;
+    width: fit-content;
+    font-size: 1.25rem;
+    background-color: black;
+  }
+}
+
+
+
+
